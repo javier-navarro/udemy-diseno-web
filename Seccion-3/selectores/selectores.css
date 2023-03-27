@@ -1,0 +1,48 @@
+header h2, h3{
+    color: red;
+}
+
+h2 {
+    color:aqua
+}
+
+p {
+    color: black;
+}
+
+p#azul {
+    color: blue;
+}
+
+.prueba {
+    color: blueviolet;
+}
+
+.texto-grande{
+    font-size: 20px;
+}
+
+/* todos los p dentro del div */
+div > p {
+    color:brown;
+}
+/*
+h2[title]{
+    color:yellowgreen
+}
+*/
+h2[title ~="main"]{
+    color:yellowgreen
+}
+
+.rojo {
+    color: red;
+}
+
+.naranjo {
+    color: orange;
+}
+
+#gris {
+    color: gray;
+}

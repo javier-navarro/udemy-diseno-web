@@ -1,0 +1,110 @@
+=====================
+Seccion 3 CSS
+=====================
+
+-----------------------------------------
+38 - Que es CSS ? cascading style sheets
+-----------------------------------------
+    Hojas de estilo en cascada
+    El como se va a ver la pagina se define en el css 
+
+-----------------------------------------
+39 - Sintaxis CSS
+-----------------------------------------
+    elemento {
+        propiedad: valor;
+    }
+
+-----------------------------------------
+41 - Normalize
+-----------------------------------------
+    css navegador --> css user --> css diseñador.
+    normalize ayuda con este problema. 
+    se debe cargar primero que el resto de los links
+
+-----------------------------------------
+44 - Prefijos
+-----------------------------------------
+    -webkit- Chrome, safari, android
+    -moz- Firefox
+    -o- Opera
+    -ms- IE, Edge
+    -khtml- konqueror
+    **CAN I USE : COMPATIBILIDAD PARA NAVEGADORES CON DISTINTOS COMPONENTES.
+
+-----------------------------------------
+45 - Desarrollo ordenado
+-----------------------------------------
+    Anotaciones globales para toda la pagina van primero 
+    Sigo el orden que tiene el html
+    ctrl+f9 para ordenar propiedades por letra
+
+-----------------------------------------
+46 - selectores/ id / clases
+-----------------------------------------
+    id: sirve para darle estilo a un elemento en particular. el id es unico no se mescla con otros ids
+    clases:sirve para darle estilo a varios elementos
+
+-----------------------------------------------
+47 - selectores adyacentes, hermanos e hijos
+-----------------------------------------------
+    para definir hijos se hace mediante ">"
+    div > p
+    para definir hermanos "~"
+    p ~ p 
+
+-----------------------------------------------
+48 - selectores de atributos
+-----------------------------------------------
+    Se usan para cambiar una propiedad a un elemento el cual contiene 
+    dicho atributo o clase.
+
+    ejemplos:
+    h2[title]  --> solo debe tener el atributo
+    h2[title="hola"] --> debe tener si o si ese valor el atributo 
+    h2[title ~="hola"] --> se utiliza cuando tienen mas de un valor y tiene al menos el que se menciona 
+
+    *COLISION DE ESTILOS
+    1- css navegador
+    2- css del user
+    3- archivos css enlazados, en el orden añadido
+    4- propiedades que se heredan
+    5- propiedades propias del elemento
+    6- clases asigndas y en el mismo orden (orden definido en css)
+    7- identificadores
+    8- !important
+
+-----------------------------------------------
+49 - Medidas Relativas
+-----------------------------------------------
+    *Buena practica definir tamaño de letra
+    *em (son heredables): calcula la anchura de la m mayuscula, se ocupa para texto generalmente
+    *rem: calcula pero sin herencia 
+    ex: toma como base la altura de la x minuscula
+
+-----------------------------------------------
+50 - Medidas Absolutas
+-----------------------------------------------
+    -in: pulgadas
+    -cm: centrimetros
+    -mm: milimetros
+    -pt: puntos (1pt = 0.35mm)
+    -pc: picas(1pc = 12pt = 4.23mm)
+
+-----------------------------------------------
+52 - Colores con palabras reservadas
+-----------------------------------------------
+    pink, black etc. Son valores preestablecidos.
+
+-------------------------------------------------------------
+53 - Colores con RGB decimal (colores primarios para luces)
+-------------------------------------------------------------
+    Es una paleta de colores de los 3 colores primarios definidos
+    abjo 
+        *rojo 
+        *verde 
+        *azul 
+
+-------------------------------------------------------------
+54 - Colores con RGB Hexadecimal 
+-------------------------------------------------------------

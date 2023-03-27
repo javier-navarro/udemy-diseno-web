@@ -1,0 +1,153 @@
+Curso Diseño WEB
+
+=====================
+Seccion 2 HTML5
+=====================
+
+------------------------------
+4 - Que es HTML ? 
+------------------------------
+
+HTML: Que tendra la pagina y en que lenguaje. (lenguaje de marcado de hipertexto)
+css: como se va a mostrar ese contenido
+
+
+8 - Que es HTML5
+html5: <!DOCTYPE html>
+
+------------------------------
+13 - Estructura HTML
+------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Titulo del doc </title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+body: aqui va todo el contenido de la pagina.
+head: metadatos, keywords , fuentes  externas, enlazar archivos css y js
+el js se puede poner dentro del body pero como buena practica se pone en el head ya que es lo primero que carga.
+Se pone dentro del body cuando el js es muy pesado o lento
+
+------------------------------
+14 - Header 
+------------------------------
+    Menu de navegacion generalmente se deja en el header.
+    -Logotipo
+    -Nombre(h1)
+    -Nav
+    -Banner 
+
+
+------------------------------
+16 - hgroup
+------------------------------
+    junta varios encabezados que estan relacionados entre si 
+    obsoleta!
+
+------------------------------
+17 - NAV > UL - OL > LI
+------------------------------
+    -ul: lista desordenada
+    -ol: lista ordenada
+    -li: lista de items.
+
+------------------------------
+18 - Enlaces
+------------------------------
+    <a href></a>
+    para abrir nueva tab --> target="_blank"
+    se puede linkear a un elemento dentro del html con el id #
+
+------------------------------
+21 - p , span 
+------------------------------
+    p: etiqueta para parrafos
+    span: contenedor en linea.
+
+------------------------------
+22 - strong, em
+------------------------------
+    -strong: da mas fuerza semantica (negrita)
+    -em: le da otra forma de poner el texto (cursiva)
+
+------------------------------
+24 - Section 
+------------------------------
+    Engloba un conjunto de contenidos enlazados entre si (p, articles)
+
+------------------------------
+25 - Article 
+------------------------------
+    son como posteos que tiene la pagina
+
+------------------------------
+26 - aside 
+------------------------------
+    Seccion de la pagina que tiene contenido indirectamente relacionado con el dcto principal
+
+------------------------------
+27 - div 
+------------------------------
+    Sirve para agrupar elementos 
+
+
+------------------------------
+28 - footer
+------------------------------
+    Pie de pagina
+
+------------------------------
+30 - Figure / figcaption / img
+------------------------------
+    **IDEALMENTE PONER LAS IMAGENES CON FIGURE>IMG>ALT SIEMPRE.
+    *imagen: <img src, alt, height, width>
+        -src: source
+        -alt: texto para la imagen.
+        -height: altura
+        -width: ancho
+    *Figure: en html5
+        <figure>
+            <img >
+        </figure>
+    *figcaption: texto que acompaña la imagen (<figcaption> algo </figcaption>)
+
+------------------------------
+31 - AUDIO
+------------------------------
+    <audio src="" type="" controls="controls">
+    </audio>
+
+------------------------------
+31 - VIDEO
+------------------------------
+    ºno todos los navegadores funcionan bien para esta etiqueta
+    es preferible subir un video de YT
+    <video src="" type="" controls="controls"> 
+    </video>
+
+------------------------------
+31 - ETIQUETAS FORMULARIO
+------------------------------
+    -form: id, nombre, method(tipo peticion post), action(adonde va a ir)
+    -input:
+        id
+        name
+        type: tipo de input (el tipo submit es como un boton.)
+        placeholder: texto que se muestra cuando esta vacio
+        onfocus: cuando esta el foco ahi
+        value: cuando es tipo submit, es el nombre del boton.
