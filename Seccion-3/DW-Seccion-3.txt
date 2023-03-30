@@ -100,7 +100,7 @@ Seccion 3 CSS
 53 - Colores con RGB decimal (colores primarios para luces)
 -------------------------------------------------------------
     Es una paleta de colores de los 3 colores primarios definidos
-    abjo 
+    abajo 
         *rojo 
         *verde 
         *azul 
@@ -108,4 +108,141 @@ Seccion 3 CSS
 -------------------------------------------------------------
 54 - Colores con RGB Hexadecimal 
 -------------------------------------------------------------
-test
+    tiene 16 colores
+    0 al 9 
+    de la A - F 
+    Es una transformacion como el decimal
+    *Va todo junto y se agrega # antes. --> #55BB88
+
+-------------------------------------------------------------
+55 - Colores con RGB Porcentual 
+-------------------------------------------------------------
+    Lo mismo pero haciendo una conversion con porcentajes.
+
+-------------------------------------------------------------
+56 - Colores con HSL 
+-------------------------------------------------------------
+    HSL: hue saturation lightness
+    la saturacion y el luz van en porcentaje.
+
+
+-------------------------------------------------------------
+57 - Colores con transparecia 
+-------------------------------------------------------------
+
+    -rgba: se agrega un parametro  mas que va de 0 a 1, el  0 es transparente del mismo color que el fondo, el 1 es solido.
+    -hsla: el mismo caso que el de arriba
+
+-------------------------------------------------------------
+58 - Modelo de caja
+-------------------------------------------------------------
+    *para ver que area ocupa un elemnto darle border o background.
+    padding: 
+        borde interno que se le hace al elemento
+        no sirve para separar elementos, para eso estan los margin. 
+        sirve para darle mas grosor al elemento.
+    
+
+    border: linea que bordea al elemento
+    background: fondo del elemento
+    margin: por fuera, separa al elemento con los del alrededor.
+
+-------------------------------------------------------------
+60 - Margin y padding 
+-------------------------------------------------------------
+    -margin: 
+        *cuando va solo 1 valor se aplica a los 4 lados. --> margin: 20px;
+        *cuando van 2, el primero aplica para arriba y abajo , y el otro para izquierda derecha --> margin: 20px, 5px;
+        *cuando van los 4  (arriba, derecha, abajo ,izquierda ) como un reloj --> margin: 20px, 5px, 2px, 4px;
+        *margin-bottom: margen de abajo
+        *margin-left: margen izquierdo
+        *margin-right: margen derecho
+        *margin-top: margen de arriba
+
+        Puede definirse como px, % etc.
+        Siempre el ultimo que se define es el que toma.
+
+    -padding:
+        *lo definido para margin aplica para el padding.
+        *los paddings pueden romper el responsive de un sitio.
+
+        **poner borde y backgorund, para ver realmente el espacio que ocupa un elemento.
+
+-------------------------------------------------------------
+61 - Display [Seccion Layout]
+-------------------------------------------------------------
+    *generalmente los sitios por default traen display block
+    -display: 
+        block: ocupa todo el ancho del padre
+        inline-block: ocupa todo el espacio del texto, y se van posicionando al lado siempre que hay espacio. (fundamental para el responsive).
+        inline: se posicionan uno al lado del otro , y mientras hay espacio para una palabra se acopla. en una sola linea
+        none: sirve para ocultar elementos principalmente se ocupa para el responsive.
+
+-------------------------------------------------------------
+62 - Positions [Seccion Layout]
+-------------------------------------------------------------
+    *Son las caracteristicas css que definen en qe punto de la pagina se posicionan los elementos html.
+    *Por default se crean en static. (comienzan a pintarse de la esquina superior izquierda)
+    *position va de la mano con: 
+        top: arriba
+        left: izquierda
+        right: derecha
+        bottom: abajo
+
+    Valores de position: 
+        -static: no toman en cuenta las cordenadas de posicionamiento.
+        -relative: toma en cuenta las cordenadas con respecto al origen.
+        -absolute: Se posiciona si o si donde se definio.
+            si se le dan coordenadas , este toma las coordenadas respecto del padre con position relative.
+        -fixed: Siempre se posiciona con respecto al body. (no se mueve nunca de esa posicion. sirve para dejar fijado en la pagina algo)
+
+-------------------------------------------------------------
+63 - Float y Clear [Seccion Layout]
+-------------------------------------------------------------
+    *Hace flotar el elemento, y queda posicionado sobre el elemento qe ocupaba esa posicion.
+    *Float se convina con display:inline-block para el proximo elemento.
+    clear: sirve para limpiar los float, se trabaja sin display:inline-block
+        -left
+        -right
+        -both: para eliminar ambos.
+
+-------------------------------------------------------------
+64 - Visibilidad [Seccion Layout]
+-------------------------------------------------------------
+    z-index: 
+        -sirve para dejar adelante un elemento que esta tapado por otro, siempre debe ir con un position.
+        -por default es 0
+        -los valores negativos dejan al ultimo la visibilidad , incluso por sobre los que no tienen definida la propiedad.
+    overflow: 
+        -hidden: todo lo que salga del padre no se ve.
+    visibility: Oculta un elemento sin que cambie el flujo de posicionamiento del resto.
+        -hidden: guarda el espacio pero no lo muestra.
+    opacity: valores del 0 al 1, sirve para transparentar un elemento. 
+        opacity 0 seria lo mismo que un visibility hidden.
+
+-------------------------------------------------------------
+65 - PseudoElementos
+-------------------------------------------------------------
+    No son seleccionables.
+    - :before: toma como cordenada desde que empieza el elemento
+    - :after: toma como cordenada desde que termina el elemento
+
+-------------------------------------------------------------
+66 - PseudoClases de enlaces
+-------------------------------------------------------------
+    Estado en el que se encuentra cierto elemento.
+
+    *:link : para cambiar el color de un enlace que no se ha visitado.
+    *:visited: para cambiar el color cuando ya se ah visitado.
+
+-------------------------------------------------------------
+67 - PseudoClases Globales
+-------------------------------------------------------------
+    Son principalmente animaciones o para navegar
+    *hover: evento cuando el raton pasa por encima para la web, para mobile no funciona.
+    *active: cambia cuando se hace click
+    *focus: mientras tengo el foco del cursor se gatilla el accion.
+
+-------------------------------------------------------------
+67 - PseudoClases Avanzadas
+-------------------------------------------------------------

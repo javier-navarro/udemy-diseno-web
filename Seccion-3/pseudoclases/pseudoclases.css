@@ -1,0 +1,26 @@
+a#link1:link {
+    color: green;
+}
+
+a#link2:visited {
+    color: red;
+}
+
+p {
+    font-size: 20px;
+}
+
+p:hover {
+    background-color: blueviolet;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+span:active {
+    color: green;
+}
+
+input:focus {
+    border-radius: 8px;
+    background: pink;
+}

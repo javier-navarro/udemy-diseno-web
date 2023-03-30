@@ -9,10 +9,29 @@ h1 {
     color: red;
 }
 
+div.rgba {
+    background-color: rgb(100, 0, 0, 1);
+}
+
+div.hsla {
+    background: hsl(240,100%,50%,0.5);
+}
 div.reservadas {
     background: lime;
 }
 
 div.rgb {
     background-color: rgb(100, 0, 0);
+}
+
+div.hex {
+    background: #643005;
+}
+
+div.porcentual {
+    background-color: rgb(50%, 20%, 75%);
+}
+
+div.hsl {
+    background: hsl(240,100%,50%);
 }

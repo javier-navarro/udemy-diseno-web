@@ -1,0 +1,11 @@
+h2 {
+    color: red;
+}
+
+h2:before {
+    content: "Este es el titulo: ";
+    position: relative;
+    color: black;
+    top: 50px;
+
+}
