@@ -1,0 +1,106 @@
+body {
+    background: rgb(116, 14, 104);
+}
+div {
+    font-family: Arial;
+    background-color: #a8cf45;
+    margin: 10px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.resalte-borde {
+    box-shadow: inset 0 0 0 4px #ddd;
+    -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+}
+
+div.resalte-borde:hover {
+    box-shadow: inset 0 0 0 4px #555;
+}
+
+/* borde-interno */
+div.borde-interno { 
+    position: relative;
+}
+
+div.borde-interno:before { 
+    content:'';
+    position: absolute;
+    border: 4px solid white;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    opacity: 0;
+    -webkit-transition-duration: 1s;
+        transition-duration: 1s;
+}
+
+div.borde-interno:hover:before { 
+    opacity: 1;
+}
+
+/* borde-expandido */
+div.borde-expandido { 
+    position: relative;
+}
+
+div.borde-expandido:before { 
+    content: '';
+    position: absolute;
+    border: 4px solid white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+}
+
+div.borde-expandido:hover:before { 
+    top: -8px;
+    bottom: -8px;
+    left: -8px;
+    right: -8px;
+}
+
+/* borde-recogido */
+div.borde-recogido { 
+    position: relative;
+}
+
+div.borde-recogido:before { 
+    content: '';
+    position: absolute;
+    border: 4px solid white;
+    top: -16px;
+    bottom: -16px;
+    left: -16px;
+    right: -16px;
+    -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    opacity: 0;
+}
+
+div.borde-recogido:hover:before { 
+    top: -8px;
+    bottom: -8px;
+    left: -8px;
+    right: -8px;
+    opacity: 1;
+}
+
+/* borde-redondeado */
+div.borde-redondeado {
+    -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+}
+
+div.borde-redondeado:hover {
+    border-radius: 20px;
+}

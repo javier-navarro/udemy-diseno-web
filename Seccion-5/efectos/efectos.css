@@ -1,0 +1,22 @@
+div {
+    width: 50%;
+    border: 2px solid black;
+    position: relative;
+    margin-left: 25%;
+}
+
+div.pseudoElemento::before {
+    content: 'hola';
+}
+
+div.pseudoElemento::after {
+    content: 'mundo';
+}
+
+div:hover {
+    background: orange;
+}
+
+a:active {
+    color: green;
+}

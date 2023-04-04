@@ -1,0 +1,58 @@
+==================================
+Seccion 5 Efectos y Animaciones
+==================================
+
+-----------------------------------------
+86 - PseudoElementos
+-----------------------------------------
+	:before
+	:after
+
+-----------------------------------------
+87 - PseudoClases
+-----------------------------------------
+	Estado de un elemento o uso de el.
+	elemento:pseudoclase ej: div:hover
+
+	focus: solo para enlaces
+	active: cuando se esta haciendo el click
+
+-----------------------------------------
+87 - 95  - Tecnicas de Camuflaje
+-----------------------------------------
+	TRIANGULOS: Define la clase, posteriormente la clase con un before, posteriormente alguna clase hover o algo. avecs despues de eso otra 	before
+		-transform: translate(0); // para que no se muevan del eje
+		--webkit-transition-duration: 0.3s ; //para una transicion suave
+		-position absolute
+		-posiciona el resto de las cordenadas.
+
+	ESQUINA-PAGINA: define la clase, before, hover+before
+		-transform: translate(0); // para que no se muevan del eje
+
+	SOMBRAS: define clase, clase+before, clase+hover, clase + hover + before
+		*FIJA: 
+			-webkit-transform: translateX(0);
+			-position
+			-define posiciones
+			-background: webkit-radial-gradient
+			-transition-duration: 0.3s;
+	        -opacity: 0; // oculto
+	    *DIFUMINADA: 
+	    	-transition-duration: 0.3s;
+	    	-box-shadow
+
+-----------------------------------------
+96 - Iluminacion
+-----------------------------------------
+	se le da background blanco.
+	background: none // toma el color del body.
+
+-----------------------------------------
+97 - 102 - Efectos de bordes
+-----------------------------------------
+	*Resalte de borde: se genera una sombra interna para dar el efecto
+					   box-shadow: inset 0 0 0 4px #ddd;
+
+	*borde interno: 
+	*borde expandido:
+	*recogida de borde		
