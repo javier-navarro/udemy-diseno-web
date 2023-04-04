@@ -1,0 +1,44 @@
+body{
+    background: orange;
+}
+
+div {
+    width: 80%;
+    height: 150px;
+    margin: 8%;
+    display: inline-block;
+    background: white;
+}
+
+@media screen and (min-width: 480px){
+    body{
+        background: rgb(68, 0, 255);
+    }
+    
+
+}
+
+@media screen and (min-width: 767px){
+    body{
+        background: rgb(255, 0, 204);
+    }
+    div { 
+        width: 40%;
+        margin: 4%;
+    }
+    
+
+}
+
+@media screen and (min-width: 950px){
+    body{
+        background: rgb(0, 255, 60);
+    }
+
+    div { 
+        width: 29%;
+        margin: 2%;
+    }
+    
+
+}

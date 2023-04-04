@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "irlandesa";
+    src: url("font/irlandesa.eot");
+    src: local('?'),
+        url("font/irlandesa.woff") format("woff"),
+        url("font/irlandesa.ttf") format("ttf"),
+        
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.text:first-letter {
+    font-size: 30px;
+}
+
+p.text::first-line {
+    font-size: 25px;
+}
+
+div.borde {
+    height: 200px;
+    width: 100px;
+    background: orange;
+    margin: 50px;
+    /*border: 2px solid green;*/
+    border-color: green;
+    border-width: 2px;
+    border-style: dashed;
+    border-radius: 20px;
+}
+
+div.sombras {
+    height: 200px;
+    width: 200px;
+    background: orange;
+    margin: 50px;
+    text-align: center;
+    box-shadow: 20px 20px 5px red;
+}
+
+p.sombra-p {
+    position: relative;
+    top: 100px;
+    font-size: 20px;
+    text-shadow: 0 0 5px red;
+}
+

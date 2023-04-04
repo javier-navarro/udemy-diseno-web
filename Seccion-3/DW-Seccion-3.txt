@@ -244,5 +244,221 @@ Seccion 3 CSS
     *focus: mientras tengo el foco del cursor se gatilla el accion.
 
 -------------------------------------------------------------
-67 - PseudoClases Avanzadas
+68 - PseudoClases Avanzadas
 -------------------------------------------------------------
+    -:nth-child(n): numero que ocupa como hijo dentro del padre el elemento
+    -:nth-last-child(n): lo mismo pero desde el final
+
+    -:nth-of-type(n): se define el tipo de elemento
+    -:nth-last-of-type(n): lo mismo pero desde el final.
+
+    -:first-of-type: se marca el primero de ese tipo
+    -:last-of-type: se marca el ultimo de ese tipo
+    -:only-of-type: se marca solo si existe uno solo de ese tipo
+    -:empty: se marca si el elemento esta completamente vacio.
+    -:not(s): se marca el elemento que no sea del tipo que se define en (s)
+
+    -:last-child: ultimo hijo
+    -:only-child: el unico hijo
+    -:root: raiz
+    -:enable: habilitados
+    -:disable: deshabilitado
+    -:checked: para checkbox
+
+    even: pares
+    odd: inpares
+
+-------------------------------------------------------------
+69 - Añadir Fuentes
+-------------------------------------------------------------
+    A  nivel interno :
+        se carga una fuente, en caso de no encontrarla , carga otra por default.
+        ej: font-family: "irlandesa", Arial.
+
+        @font-face {
+            font-family: "irlandesa";
+            src: url("font/irlandesa.eot");
+            src: local('?'),
+                url("font/irlandesa.woff") format("woff"),
+                url("font/irlandesa.ttf") format("ttf"),
+                
+        }
+    A nivel externo: 
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+-------------------------------------------------------------
+70 - Propiedades de las  Fuentes
+-------------------------------------------------------------
+    Cada fuente tiene sus propias caracteristicas y propiedades.
+    *font-weight: cambian el grosor
+        -En pixeles
+            :100, 200, 300, 400, 500, 600, 700, 800.
+        -En palabras reservadas: 
+            normal: 400
+            bold: 700
+            older: 900
+            lighter: 100
+
+    *font-style:
+        -normal
+        -italic
+        -oblique
+
+    *text-align:
+        -left
+        -right
+        -center
+        -fustify: se ajusta el texto al tamaño de la pantalla.
+
+    *line-height: altura de la linea 
+
+    *text-decoration: Para ponerle estilos a la pagina:
+        -normal o none: sin 
+        -underline: subrayado
+        -overline: suprarayado
+        -line-through: texto tachado.
+
+    *text-transform:
+        -capitalize: mayuscula de todas las primeras letras de las  palabras
+        -uppercase: mayusculas todas
+        -lowercase: minusculas todas.
+
+    *font-variant: small caps (mantiene el texto de mismo tamaño)
+
+    *text-indent: identado para el texto (se define en px.)
+
+    *letter-spacing: espacio que hay entre las letras. (se define en px)
+
+    *word-spacing: hace lo mismo pero no altera el espacio entre las letras si no el de las palabras.
+
+    *:first-letter: La primera letra de un texto podemos agrandarla o achicarla mas de lo normal. 
+
+    *:first-line: La primera linea de un parrafo lo agranda o achica dependiendo de como se defina.
+
+-------------------------------------------------------------
+71 - Bordes
+-------------------------------------------------------------
+    Generalmente se define: 
+        **border: 2px solid green;
+
+    *border-width: anchura del borde, se mide en px.
+
+    *border-style: tipo de borde
+        -solid: solido.
+        -dashed:  interlineado con lineas
+        -double: doble marco
+        -dotted: interlineado con puntos
+        -inset: marco con sombra in
+        -outset: marco con sombra out
+        -none: nada
+
+    *border-color: color del borde
+
+    *border-radius: para darle un radio al borde, se mide en px.
+    para personalizar solo un borde seria algo asi:
+        -border-top-style: solid / solo el de arriba
+        -border-top-right-radius: 50px 30px / seria darle radio arriba y a la derecha.
+
+-------------------------------------------------------------
+72 - Sombras
+-------------------------------------------------------------
+    La estructura de las sombras para cajas (box-shadow) o texto (text-shadow) tiene 4 valores:
+        -Desplazamiento Horizontal
+        -Desplazamiento Vertical
+        -Difuminado
+        -Color
+
+    ejemplo: box-shadow: 20px 20px 5px red;
+
+    *para la sombra interna --> box-shadow: inset 20px 20px 5px red;
+
+-------------------------------------------------------------
+73 - Fondos de imagen
+-------------------------------------------------------------
+    *background: url(direccion de la imagen)
+    *background-repeat: repite nn veces llenando el espacio con la imagen
+        -no-repeat: que no repita
+        -repeat-y: solo en eje y hasta llenar el espacio.
+        -repeat-x: solo en eje x hasta llenar el espacio.
+
+    *background-position: Para posicionar el fondo de un elemento tenemos 3 opciones:
+        -border-box: desde el borde
+        -padding-box: desde la zona del padding
+        -content-box: desde la zona del contenido
+
+
+-------------------------------------------------------------
+74 - Fondos con degradados.
+-------------------------------------------------------------
+
+    Puede ser lineal (linear) o circular (radial)
+    background: -webkit-linear-gradient(
+        left,
+        blue 0%,
+        red 30%,
+        green 80%,
+        yellow 100%
+    ) ;
+
+    LOS GRADOS SE PONEN COMO deg
+
+-------------------------------------------------------------
+75 - Transform - transform
+-------------------------------------------------------------
+    transform: tipo
+    transform: tipoX
+    transform: tipoY
+    transform: tipo(cantidadX, cantidadY)
+    transform: tipo() tipo() tipo() .....
+    
+
+    *TIPOS DE TRANSFORM
+        -rotate: se puede combinar con transform-origin (top, bottom, right, left), tambien puede ser mas de 1 punto de referencia.
+        -skew: dejamueve los ejes como rombo.
+        -translate: hace traslacion en px
+        -scale: solo lleva numeros a nivel escala.
+
+    *DIFERENCIA ENTRE TRANSLATE Y POSITION
+    translate no afecta al flujo de colocacion de la pagina
+
+-------------------------------------------------------------
+76 - transition
+-------------------------------------------------------------
+    *transition-property: que propiedades iran en la transicion (all)
+    *transition-duration: tiempo que demora la transicion
+    *transition-delay: tiempo de delay pra que empiece la animacion.
+    *transition-timing-function: 
+
+        -linear: cuando la transicion es al mismo tiempo
+        -ease: lo hace a diferentes velocidades.
+        -ease-in: empieza lento y termina rapido 
+        -ease-out: empieza rapido y termina lento
+        -ease-in-out: empieza rapido sigue lento y termina rapido
+
+-------------------------------------------------------------
+77 - Conbinar transformaciones
+-------------------------------------------------------------
+    PARA CONBINAR:
+        transform: tipo() tipo() tipo() .....
+
+    *transition-property: que propiedades iran en la transicion (all)
+    *transition-duration: tiempo que demora la transicion
+    *transition-timing-function: 
+    se pueden combinar esas 3 propiedades en: 
+        transition: all 2s linear.
+
+-------------------------------------------------------------
+78 - Responsive Design y mobile first
+-------------------------------------------------------------
+
+    mobile first: 
+        diseñar elementos de la pagina para que esten orientados a dispositivos mobiles.
+
+    @media screen and (min-width: 480px){
+
+    }
+
+    No utilizar medidas fijas de pixeles, hay que tratar de hacerlo en porcentajes.
+    No debe aparecer la barra horizontal de scroll

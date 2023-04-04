@@ -1,0 +1,45 @@
+div {
+    height: 200px;
+    width: 200px;
+    background: orange;
+    border: 2px solid black;
+    margin: 50px;
+    text-align: center;
+}
+
+p {
+    position: relative;
+    top: 50px;
+    font-weight: 700;
+}
+
+div.rotate {
+    transform: rotate(20deg);
+    transform-origin: top;
+}
+
+div.skew {
+    transform: skew(20deg);
+}
+
+div.translate {
+    transform: translate(20px);
+}
+
+div.scale {
+    transform: scale(1.2);
+}
+
+div.aux {
+    transition-property: all;
+    transition-duration: 8s;
+    transition-timing-function: ease-out;
+    
+}
+
+div.aux:hover {
+    /* transform: scale(1.2, 0.5); 
+    transform: rotate(90deg); */
+    transform: rotate(90deg) skew(20deg);
+    background: green;
+}
